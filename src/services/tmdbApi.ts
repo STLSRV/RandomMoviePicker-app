@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { TMDB_BASE_URL } from '../utils/constants';
 import { Movie } from '../types/movie';
+import { TMDB_API_KEY } from '@env';
 
-const API_KEY = process.env.TMDB_API_KEY;
+const API_KEY = TMDB_API_KEY;
 
 export const getRandomMovie = async (): Promise<Movie> => {
   const page = Math.floor(Math.random() * 10) + 1;
