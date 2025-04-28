@@ -31,7 +31,7 @@ const FavoriteScreen: React.FC = () => {
       ) : (
         <FlatList
           data={favorites}
-          keyExtractor={(item) => item.id.toString()}
+          keyExtractor={(item, index) => `${item.id}-${index}`}
           renderItem={renderItem}
           contentContainerStyle={{ paddingBottom: 20 }}
           showsVerticalScrollIndicator={false}

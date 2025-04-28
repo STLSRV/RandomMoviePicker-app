@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, StyleSheet, ScrollView, TouchableOpacity, Linking, ActivityIndicator } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, TouchableOpacity, Linking, ActivityIndicator, Alert } from 'react-native';
 import { RouteProp, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { getMovieTrailer } from '../services/tmdbApi';
@@ -18,7 +18,7 @@ type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 const DetailScreen: React.FC = () => {
   const route = useRoute<DetailScreenRouteProp>();
   const { movie } = route.params;
-  const { addFavorite } = useFavorite();
+  const { favorites, addFavorite } = useFavorite();
   const [loadingTrailer, setLoadingTrailer] = useState(false);
 
   const handleWatchTrailer = async () => {
@@ -28,18 +28,23 @@ const DetailScreen: React.FC = () => {
       if (trailerUrl) {
         Linking.openURL(trailerUrl);
       } else {
-        alert('Trailer not available.');
+        Alert.alert('Trailer Not Available', 'No trailer found for this movie.');
       }
     } catch (error) {
       console.error(error);
-      alert('Failed to load trailer.');
+      Alert.alert('Error', 'Failed to load trailer.');
     }
     setLoadingTrailer(false);
   };
 
   const handleAddFavorite = () => {
+    const exists = favorites.some((fav) => fav.id === movie.id);
+    if (exists) {
+      Alert.alert('Already in Favorites', 'You have already added this movie.');
+      return;
+    }
     addFavorite(movie);
-    alert('Added to favorites!');
+    Alert.alert('Success', 'Movie added to your favorites! ❤️');
   };
 
   return (
@@ -98,6 +103,7 @@ const styles = StyleSheet.create({
     color: '#555',
     marginBottom: 20,
     lineHeight: 22,
+    textAlign: 'center',
   },
   button: {
     backgroundColor: PRIMARY_COLOR,
