@@ -1,31 +1,30 @@
-ชื่อ - นามสกุล (Full Name):
-รหัสนักศึกษา (Student ID):
+ชื่อ - นามสกุล (Full Name):Siravit Thakaew
+รหัสนักศึกษา (Student ID):6631503041
 ชื่อแอป (App Name):
-Framework ที่ใช้ (Framework Used): Flutter / React Native / อื่น ๆ
-ลิงก์ GitHub Repository: [ใส่ลิงก์ที่นี่ | Insert link here]
-ลิงก์ไฟล์ติดตั้ง (APK/IPA): [ใส่ลิงก์ที่นี่ | Insert link here]
+Framework ที่ใช้ (Framework Used):Expo + React Native + TypeScript
+ลิงก์ GitHub Repository: [(https://github.com/STLSRV/RandomMoviePicker-app.git)]
+ลิงก์ไฟล์ติดตั้ง (APK/IPA): [(https://drive.google.com/file/d/1RqhVuOID15bffEUMrWh8ysxyhLt_EK2A/view?usp=sharing)]
 
 1. การออกแบบแอป | App Concept and Design (2 คะแนน / 2 pts)
 1.1 ผู้ใช้งานเป้าหมาย | User Personas
 ตัวอย่าง (Example):
 
 Persona 1:  
-- ชื่อ: นัท  
+- ชื่อ: อิคคิว  
 - อายุ: 20 ปี  
 - อาชีพ: นักศึกษาปี 2  
-- ความต้องการ: ต้องการจัดตารางเรียนและเตือนสอบให้มีวินัยมากขึ้น
+- ความต้องการ: ไม่รู้ว่าจะดูหนังไรดีเลยใช้
 
 Persona 2:  
-- ชื่อ: แพรว  
-- อายุ: 22 ปี  
-- อาชีพ: นักศึกษาฝึกงาน  
-- ความต้องการ: ต้องการวางแผนงานและกำหนดเป้าหมายประจำสัปดาห์
+- ชื่อ: น็อต  
+- อายุ: 20 ปี  
+- อาชีพ: นักศึกษาปี 2  
+- ความต้องการ: ไม่รู้ว่าจะดูหนังไรดีเลยใช้
 1.2 เป้าหมายของแอป | App Goals
 ตัวอย่าง (Example):
 
-- ช่วยนักศึกษาจัดตารางเรียนรายสัปดาห์
-- เพิ่มระบบเตือนสอบและงานที่ต้องส่ง
-- มีหน้าแดชบอร์ดรวมกิจกรรมประจำวัน
+- ช่วยในการตัดสินใจในการดูหนัง
+- 
 1.3 โครงร่างหน้าจอ / Mockup
 ใส่รูปภาพ หรือคำอธิบายแต่ละหน้าหลัก 3 หน้า | Attach image or describe 3 main pages
 
