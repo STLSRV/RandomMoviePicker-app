@@ -1,6 +1,6 @@
 ชื่อ - นามสกุล (Full Name):Siravit Thakaew
 รหัสนักศึกษา (Student ID):6631503041
-ชื่อแอป (App Name):
+ชื่อแอป (App Name):RandomMoviePicker
 Framework ที่ใช้ (Framework Used):Expo + React Native + TypeScript
 ลิงก์ GitHub Repository: [(https://github.com/STLSRV/RandomMoviePicker-app.git)]
 ลิงก์ไฟล์ติดตั้ง (APK/IPA): [(https://drive.google.com/file/d/19GfyeCULCpiXXMSsB9SKC8radItyka6_/view?usp=sharing)]
